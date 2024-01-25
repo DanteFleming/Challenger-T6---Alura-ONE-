@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Krona+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="inicio">
+        <section class="inicio__conteudo">
+            <h1 class="inicio__conteudo__titulo">Decodificador de Texto</h1>
+                <textarea class="inicio__conteudo__texto" name="texto" id="texto" 
+                      cols="90" rows="10" onclick="mostrarMensagem()">Digite seu texto em letra minúscula e sem acentuação</textarea>
+                      <div class="botoes">
+                        <button onclick="processar('criptografar')">Criptografar</button>
+                        <button onclick="processar('descriptografar')">Descriptografar</button>
+                    </div>
+                 <textarea class="inicio__conteudo__resultado" id="resultado" rows="10" cols="90" readonly></textarea>
+        </section>
+        <img class="setor__imagem" src="./assets/cadeado criptog.png" alt="cadeado">
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Dante Fleming.</p>
+    </footer>
+    <script src="./Script/script.js"></script>
+</body>
+</html>
